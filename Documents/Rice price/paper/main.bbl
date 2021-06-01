@@ -1,0 +1,95 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Armstrong}{2001}{armstrong2001principles}
+Armstrong, Jon~Scott. 2001.
+\newblock {\em Principles of forecasting: a handbook for researchers and
+  practitioners}.
+\newblock Vol.~30 Springer Science \& Business Media.
+
+\harvarditem{Baciu}{2015}{baciu2015stochastic}
+Baciu, Ionut-Cristian. 2015.
+\newblock ``Stochastic models for forecasting inflation rate. Empirical
+  evidence from Romania.'' {\em Procedia Economics and Finance} 20:44--52.
+
+\harvarditem{Box \harvardand\ Jenkins}{1976}{box1976time}
+Box, George~EP \harvardand\ Gwilym~M Jenkins. 1976.
+\newblock ``Time series analysis: Forecasting and control San Francisco.'' {\em
+  Calif: Holden-Day} .
+
+\harvarditem{Culling}{1960}{culling1960analytical}
+Culling, WEH. 1960.
+\newblock ``Analytical theory of erosion.'' {\em The Journal of Geology}
+  68(3):336--344.
+
+\harvarditem[de~Melo et~al.]{de~Melo, Maslennikov, Popova, Bezrukova
+  \harvardand\ Kyksova}{2015}{de2015quantitative}
+de~Melo, Fernando, Valery~V Maslennikov, Elena~V Popova, Tatyana~L Bezrukova
+  \harvardand\ Irina~V Kyksova. 2015.
+\newblock ``Quantitative analysis in economics based on wavelet transform: a
+  new approach.'' {\em Asian Social Science} 11(20):66.
+
+\harvarditem{Fisher}{1929}{fisher1929tests}
+Fisher, Ronald~Aylmer. 1929.
+\newblock ``Tests of significance in harmonic analysis.'' {\em Proceedings of
+  the Royal Society of London. Series A, Containing Papers of a Mathematical
+  and Physical Character} 125(796):54--59.
+
+\harvarditem[Ftiti, Essaadi et~al.]{Ftiti, Essaadi
+  et~al.}{2008}{ftiti2008inflation}
+Ftiti, Zied, Essahbi Essaadi et~al. 2008.
+\newblock The inflation Targeting effect on the inflation series: ANew Analysis
+  Approach of evolutionary spectral analysis.  In {\em GATE Working Paper
+  Number 08--32}.
+
+\harvarditem{Hamilton}{2020}{hamilton2020time}
+Hamilton, James~Douglas. 2020.
+\newblock {\em Time series analysis}.
+\newblock Princeton university press.
+
+\harvarditem{Iacobucci}{2005}{iacobucci2005spectral}
+Iacobucci, Alessandra. 2005.
+\newblock Spectral analysis for economic time series.  In {\em New Tools of
+  Economic Dynamics}.
+\newblock Springer pp.~203--219.
+
+\harvarditem[Konarasinghe, Abeynayake \harvardand\ Gunaratne]{Konarasinghe,
+  Abeynayake \harvardand\ Gunaratne}{2016}{konarasinghe2016circular}
+Konarasinghe, WGS, NR Abeynayake \harvardand\ LHP Gunaratne. 2016.
+\newblock ``Circular model on forecasting returns of Sri Lankan Share market.''
+  {\em International Journal of Novel Research in Physics, Chemistry and
+  Mathematics} 3(1):49--56.
+
+\harvarditem{Mankiw}{2018}{mankiw:2018}
+Mankiw, Gregory~N. 2018.
+\newblock {\em Principles of Economics}.
+\newblock 8th ed. Cengage Learning.
+
+\harvarditem[Moser, Rumler \harvardand\ Scharler]{Moser, Rumler \harvardand\
+  Scharler}{2007}{moser2007forecasting}
+Moser, Gabriel, Fabio Rumler \harvardand\ Johann Scharler. 2007.
+\newblock ``Forecasting austrian inflation.'' {\em Economic Modelling}
+  24(3):470--480.
+
+\harvarditem{Russel}{1985}{russel1985significance}
+Russel, R. 1985.
+\newblock ``Significance tables for the results of Fast Fourier Transforms.''
+  {\em Br J Math Stat Psychol} 38:116--119.
+
+\harvarditem[Sella et~al.]{Sella, Vivaldo, Ghil \harvardand\
+  Groth}{2010}{sella2010economic}
+Sella, Lisa, Gianna Vivaldo, Michael Ghil \harvardand\ Andreas Groth. 2010.
+\newblock ``Economic cycles and their synchronization: Spectral analysis of
+  macroeconomic series from Italy, The Netherlands, and the UK.'' {\em EGUGA}
+  p.~11847.
+
+\harvarditem{Thomson \harvardand\ Van~Vuuren}{2016}{thomson2016forecasting}
+Thomson, Daniel \harvardand\ Gary Van~Vuuren. 2016.
+\newblock ``Forecasting the South African business cycle using Fourier
+  analysis.'' {\em International Business \& Economics Research Journal (IBER)}
+  15(4):175--192.
+
+\harvarditem{Weisstein}{2004}{weisstein2004fourier}
+Weisstein, Eric~W. 2004.
+\newblock ``Fourier transform.'' {\em https://mathworld. wolfram. com/} .
+
+\end{thebibliography}

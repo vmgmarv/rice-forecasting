@@ -1,0 +1,31 @@
+\section{Mathematical theory on Fourier analysis development}
+
+This section briefly provides mathematical considerations on the Fourier development.
+
+Let a function $f:R \rightarrow R$, with $f$ and $f'$ piecewise continous on $R$ and periodic with period $T$, therefore $f(x+T) = f(x) \forall x \in R$ Considering Fourier series associated with the function $f: F(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty} (a_k \cos \frac{2k \pi x}{T} + b_k \sin \frac{2k \pi x}{T})$ we then have the following,
+
+\begin{equation} \label{lemma}
+	\int_{\frac{-T}{2}}^{\frac{T}{2}} f(x) \cos \frac{2n\pi x}{T} dx = \frac{a_n T}{2}, n \geq 0, \int_{\frac{-T}{2}}^{\frac{T}{2}} f(x) \sin \frac{2n\pi x}{T} dx = \frac{b_n T}{2}, n\geq 1
+\end{equation}
+
+From Fourier series expression, it is observed that $F(x+T) = F(x) \forall x \in R$ so its sum is also a periodic function of period $T$
+
+The Dirichlet's Theorem \cite{weisstein2004fourier} states that in the conditions above, the Fourier series should converge punctually to $f$ in the points of continuity and to $\frac{f(x+0) + f(x-0)}{2}$ in the discontinuity points.
+
+Considering the partial sum of order $n$ corresponding to the series of function $F$, the
+n-th Fourier polynomials is then given by 
+\begin{equation}
+	F_n(x) = \frac{a_0}{2} + \sum_{k=1}^{n} (a_k \cos \frac{2k\pi x}{T} + b_k \sin \frac{2k \pi x}{T})
+\end{equation}
+
+The Fourier polynomials have the property of approximating the function through one periodical with the observation that the absolute error tends to fall (due to the convergence points) with the rise of $n$. 
+
+
+Due to the existence of an important number of cyclical phenomena in many
+scientific fields, we intend, below, to approximate their development by means of Fourier polynomials of degree conveniently chosen. 
+
+In the case of the discretized phenomenons, we put the problem in the generation of functions that will pass through a series of data points. A very useful tool is the Lagrange interpolation polynomial. Therefore, considering a set of data $(x_i, y_i), i = 1, k + 1$, the Lagrange interpolation polynomial takes the form given in \textbf{Equation \ref{lagrange}}. Further, \textbf{Equation \ref{lagrange}} is the polynomial of minimum degree $k$ passing through the data points.
+
+\begin{equation} \label{lagrange}
+	L+n(x) = \sum_{i=1}^{k+1} \frac{(x-x_1) ... (x-x_{i-1})(x-x_{i+1}) ...(x-x_n)}{(x_i-x_1) ... (x_i-x_{i-1})(x_i-x_{i+1}) ...(x_i-x_n)} y_i
+\end{equation}

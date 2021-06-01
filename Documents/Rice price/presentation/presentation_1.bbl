@@ -1,0 +1,102 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{ftiti2008inflation}{incollection}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{2}{}{%
+      {{hash=FZ}{%
+         family={Ftiti},
+         familyi={F\bibinitperiod},
+         given={Zied},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Essaadi},
+         familyi={E\bibinitperiod},
+         given={Essahbi},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FZEE+1}
+    \strng{fullhash}{FZEE+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{GATE Working Paper Number 08--32}
+    \field{title}{The inflation Targeting effect on the inflation series: ANew
+  Analysis Approach of evolutionary spectral analysis}
+    \field{year}{2008}
+  \endentry
+
+  \entry{iacobucci2005spectral}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=IA}{%
+         family={Iacobucci},
+         familyi={I\bibinitperiod},
+         given={Alessandra},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{IA1}
+    \strng{fullhash}{IA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{New Tools of Economic Dynamics}
+    \field{pages}{203\bibrangedash 219}
+    \field{title}{Spectral analysis for economic time series}
+    \field{year}{2005}
+  \endentry
+
+  \entry{mankiw:2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MGN}{%
+         family={Mankiw},
+         familyi={M\bibinitperiod},
+         given={Gregory\bibnamedelima N.},
+         giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cengage Learning}%
+    }
+    \strng{namehash}{MGN1}
+    \strng{fullhash}{MGN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{edition}{8th}
+    \field{title}{Principles of Economics}
+    \field{year}{2018}
+  \endentry
+\enddatalist
+\endinput

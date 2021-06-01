@@ -1,0 +1,11 @@
+\setcounter{page}{1} % Sets counter of page to 1
+
+\section{Preliminary study - checking for causation using $R^2$ and OLS} % Add a section title
+
+Since there is abundance in the rice data from the mid 1990s to the current year, the author explored for some cauality in rice prices and rice supply. This is in accordance with theory that when supply plummets, price increases. The author found four time series datasets, i.e. rice prices, total rice stock (TRS), household rice stock (HRS), commercial rice stock (CRS), and NFA rice stock (NRS). However, upon checking for causation through a simple ordinary least squares regression (OLS), the author found no causation in the empirical data. In the first run, the author used the following linear model:
+
+\begin{equation}
+	\text{rice price} = \alpha_0 + \alpha_1 \text{TRS} + \alpha_2 \text{HRS} + \alpha_3 \text{CRS} + \alpha_4 \text{NRS} 
+\end{equation}
+
+The resulting $R^2$ shows a very low value of $~0.289$ which indicates a pretty low correlation to try to draw conclusions. The author further utilised omitted-variable bias (OVB) technique, to check if $R^2$ improves. However, $R^2$ failed to improve. Thus, based from the preliminary study, the rice inflation time series can be modelled using a univariate process.

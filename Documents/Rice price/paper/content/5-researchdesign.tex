@@ -1,0 +1,75 @@
+%----------------------------------------------------------------------------------------
+% Research design
+%----------------------------------------------------------------------------------------
+
+\section{Research Methodology}
+
+The main objective of this study is to develop a significant model to forecast inflation in the Philippines. For this purpose, monthly consumer price index (CPI) data is gathered from the Philippine Statistics Authority (PSA) and covers the period from January 1994 to December 2020.
+
+First, data preparation is used to transform the rice CPI data to rice inflation rates. Then, periodogram analysis is used to find rice inflation cycle as rice inflation may have periodicity in the series. After which, the period or frequency of sereis, significance of selected period is tested by a test developed by Fisher in 1929 \cite{fisher1929tests}. Fourier analysis is then used to model rice inflation by utilizing selected frequency as Fourier frequency. On the other hand, ARIMA methodology will also be used to model the rice inflation data. However, in this study, performing ARIMA is not extensively discussed as this methodology has been well elaborated in several economic literatures. To assess the performance of the two models, this paper will utilize root mean square error (RMSE) and Mean Absolute Error (MAE) as the performance metrics (see \textbf{Equations \ref{RMSE}} \& \textbf{\ref{MAE}}). By using these accuracy measures, we can conclude which model is superior based on smaller values of RMSE and MAE.
+\begin{equation} \label{RMSE}
+	RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} e_i^2}
+\end{equation}
+
+\begin{equation} \label{MAE}
+	MAE = \frac{1}{n} \sum_{i=1}^{n} |e_i|
+\end{equation}
+\subsection{Data preparation}
+Rice inflation is defined as the percent difference between the current CPI and the CPI of the previous year as seen in \textbf{Equation \ref{inflation}} below:
+
+\begin{equation} \label{inflation}
+	\pi _{year-on-year} = \frac{CPI_t - CPI _{t-1}}{CPI_{t-1}} * 100
+\end{equation}
+where $CPI_t$ is the $CPI$ of the current month while $CPI_{t-1}$ is the same month's $CPI$ from the previous year.
+
+\subsection{Periodogram analysis}
+
+Periodogram is a tool that partitions the total variance of a time series into component variances. This method is similar to ANOVA. The longer cycle shares large variance in the series. In general practice, when periods of cycles are not known then Periodogram is utilized to identify dominant cyclic behavior in the series. In periodogram, time series can be viewed as
+
+\begin{equation}
+	Y_t = T_t + \sum_{i=1}^{N} (a_i \cos w_i t + b_i \sin w_i t) + \epsilon_t
+\end{equation}
+where $T_t$ is trend, $N$ is total number of observations, $a_i$ and $b_i$ are coefficients, $w_i$ is angular frequency in radians and $\epsilon_t$ is the error term. The coefficients are calculated which is presented in \textbf{Equations \ref{cos}} \& \textbf{\ref{sin}} below.
+
+\begin{equation} \label{cos}
+	a_i = \frac{2}{N} \sum_{t=1}^{N}(Y_t - \hat{T}_t) \cos w_i t
+\end{equation}
+
+\begin{equation} \label{sin}
+b_i = \frac{2}{N} \sum_{t=1}^{N}(Y_t - \hat{T}_t) \sin w_i t
+\end{equation}
+The calculated coefficients are then used to obtain Intensity of Periodogram coordinate at frequency $f_i$ as
+
+\begin{equation}
+	I(f_i) = \frac{2}{N}(a_i^2 + b_i^2)
+\end{equation}
+where $i = 1,2,3,.q$. In case of even number of observations $N = 2q, q = n/2$ and for odd number of observations $N = 2q+1, q = (N-1)/2$. The period against the largest Intensity that is actually the largest sum
+of squares is selected as cycle period of series.
+
+\subsection{Significance test}
+The variability in the sizes of sum of squares may be due to just sampling error. The largest
+ordinate must indicate strong periodicity even for white noise series. Therefore it is necessary
+to test the significance of largest periodic component in white noise. A test developed by Fisher in 1929 \cite{fisher1929tests} provides a reasonable method for testing significance of such periodic components. To perform Fisher test, \textit{g} statistic is computed which is the ratio of largest sum of squares (or intensity ordinate) to the total sum of squares. A table of reference is given by Russel \cite{russel1985significance} which is the critical values for the test statistic. The null hypothesis of white noise series is rejected, if
+the value of g statistic is greater than critical value.
+
+\subsection{Spectral analysis}
+
+The basic idea of spectral analysis is to transform the time domain series into frequency
+domain series, which determines the importance of each frequency in the original series. This
+target is achieved by using Fourier transformation.
+
+The general Fourier series model that contain components of time series is given by
+
+\begin{equation}
+	Y_t = T_t + \sum_{i=1}^{k}(\alpha_i \cos iwt + \beta_i \sin iwt) + \epsilon_t
+\end{equation}
+where $w = 2\pi f$, $k = n/2$ in case of even number, $k = (n-1)/2$ in case of odd number, $n$ is the number of observations per season or cycle length, $f$ is the Fourier frequency of number of peaks in series, $k$ is the harmoninic of $w$ - a more detailed explanation for this is given in the study by Delurgio \cite{armstrong2001principles}, $t$ is the time index, $\alpha_i$ and $\beta_i$ are amplitudes which are estimated through multiple linear regression analysis.
+
+\subsection{Development of control model}
+
+The control model for this study is ARIMA presented by Box \& Jenkins \cite{box1976time}. The model requires the time series to be stationarity. Afterwards parameters $p$, $d$, and $q$, the autoregressive terms, times differenced, and moving average terms respectively. This model is governed by a linear equation in which predictors are lags of dependent variable and lags of error terms, presented in \textbf{Equation \ref{arima}} below.
+
+\begin{equation} \label{arima}
+	\phi_p(B) \Delta^d Y = \theta_q (B) \epsilon_t
+\end{equation}
+where $Y_t$ is the present value, $d$ is the difference, $B$ is the backshift operator, and $\epsilon_t$ is the error term.
